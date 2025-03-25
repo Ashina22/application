@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="css/markers.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -19,7 +25,7 @@
     <button class="close-btn" onclick="closeTab()">
       <i class="fas fa-arrow-left"></i>
     </button>
-    
+
     <script>
       function closeTab() {
         window.close();
@@ -27,12 +33,12 @@
     </script>
 
     <iframe
-      id="panoee-tour-embeded"
-      name="ccis"
-      src="https://tour.panoee.com/iframe/66855ca8ec5013d11d6c2699"
+      id="tour-embeded"
+      name="new admin"
+      src="https://tour.panoee.net/iframe/67d023dcbc7e2eb9baccf20d"
       frameborder="0"
       width="100%"
-      height="400px"
+      height="550px"
       scrolling="no"
       allowvr="yes"
       allow="vr; xr; accelerometer; gyroscope; autoplay;"
@@ -41,9 +47,8 @@
       mozallowfullscreen="false"
       loading="eager"
     ></iframe>
-
     <script>
-      var pano_iframe_name = "panoee-tour-embeded";
+      var pano_iframe_name = "tour-embeded";
       window.addEventListener("devicemotion", function (e) {
         var iframe = document.getElementById(pano_iframe_name);
         if (iframe)
@@ -75,68 +80,120 @@
       });
     </script>
 
-<div class="container-fluid mb-5">
-  <div class="col-lg-12">
-    <h1>New Admin Building</h1>
-    <hr />
-    <p class="mb-3"> Below is a list of the rooms, facilities, and other key areas located within this building, organized by floor for your convenience.</p>
-    <p class="mb-3">The new Administration building is built on commitment and dedication and in solid rock of love and prayers. Dr. Penaso further stated that the structure is built to serve humanity with competence and uprightness.</p>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-lg-6">
-      <div class="card">
-        <div class="header"></div>
-        <div class="title-row">
-          <h4>First Floor</h4>
-          <img src="img/layer1.png" alt="Info" width="35" height="35"> 
+    <div class="container-fluid mb-5">
+      <div class="col-lg-12">
+        <h1>New Admin Building</h1>
+        <hr />
+        <p class="mb-3">
+          Below is a list of the rooms, facilities, and other key areas located
+          within this building, organized by floor for your convenience.
+        </p>
+        <p class="mb-3">
+          The new Administration building is built on commitment and dedication
+          and in solid rock of love and prayers. Dr. Penaso further stated that
+          the structure is built to serve humanity with competence and
+          uprightness.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <div class="card">
+            <div class="header"></div>
+            <div class="title-row">
+              <h4>First Floor</h4>
+              <img src="img/layer1.png" alt="Info" width="35" height="35" />
+            </div>
+            <hr />
+            <h6 style="margin-left: 4%">Right wing</h6>
+            <div class="info">
+              <p><i class="fa-solid fa-couch"></i> Lobby</p>
+              <p><i class="fas fa-restroom"></i> Comfort rooms</p>
+              <p>
+                <i class="fa-solid fa-users"></i> Child care room and
+                Breastfeeding room
+              </p>
+              <p><i class="fa-solid fa-users"></i> Personnel lounge room</p>
+              <p><i class="fa-solid fa-users"></i> Cashier office</p>
+              <hr />
+              <h6 style="margin-left: 4%">Left wing</h6>
+              <p><i class="fa-solid fa-users"></i> Conference Hall</p>
+            </div>
+          </div>
         </div>
-        <hr>
-        <H6 style="margin-left: 4%;">Right wing</H6>
-        <div class="info">
-          <p><i class="fa-solid fa-couch"></i> Lobby</p>
-          <p><i class="fas fa-restroom"></i> Comfort rooms</p>
-          <p><i class="fa-solid fa-users"></i> Child care room and Breastfeeding room</p>
-          <p><i class="fa-solid fa-users"></i> Personnel lounge room</p>
-          <p><i class="fa-solid fa-users"></i> Cashier office</p>
-          <hr>
-          <H6 style="margin-left: 4%;">Left wing</H6>
-          <p><i class="fa-solid fa-users"></i> Conference Hall</p>
+        <div class="col-sm-12 col-lg-6">
+          <div class="card">
+            <div class="header"></div>
+            <div class="title-row">
+              <h4>Second Floor</h4>
+              <img src="img/layer2.png" alt="Info" width="35" height="35" />
+            </div>
+            <hr />
+            <div class="info">
+              <p><i class="fa-solid fa-couch"></i> Lobby</p>
+              <p><i class="fas fa-restroom"></i> Comfort rooms</p>
+              <hr />
+              <i class="fa-solid fa-users" style="margin-left: 5%"></i> Offices
+              <ul>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Presidents conference room
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Office of the university board secritary
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Office of the presidents staff
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  OVPRIE staff
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  OVPAF staff
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  OVPOEAS staff
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Office of the vice president for research, innovation and
+                  extention
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Office of the vice president for administration and finance
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  GAD conference room
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Office of the vice president for executive operations and
+                  auxiliary services
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Records office
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Gender and development office
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-dot" style="font-size: 10px"></i>
+                  Office of structural engineering
+                </p>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-12 col-lg-6">
-      <div class="card">
-        <div class="header"></div>
-        <div class="title-row">
-          <h4>Second Floor</h4>
-          <img src="img/layer2.png" alt="Info" width="35" height="35"> 
-        </div>
-        <hr>
-        <div class="info">
-          <p><i class="fa-solid fa-couch"></i> Lobby</p>
-          <p><i class="fas fa-restroom"></i> Comfort rooms</p>
-          <hr>
-          <i class="fa-solid fa-users" style="margin-left: 5%;"></i> Offices
-          <ul>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Presidents conference room</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Office of the university board secritary</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Office of the presidents staff</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> OVPRIE staff</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> OVPAF staff</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> OVPOEAS staff</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Office of the vice president for research, innovation and extention</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Office of the vice president for administration and finance</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> GAD conference room</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Office of the vice president for executive operations and auxiliary services</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Records office</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Gender and development office</p>
-          <p><i class="fa-solid fa-circle-dot" style="font-size: 10px;"></i> Office of structural engineering</p>
-        </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
 
     <script>
       function goBack() {

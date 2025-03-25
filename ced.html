@@ -27,55 +27,12 @@
       }
     </script>
     
-
-    <iframe
-      id="panoee-tour-embeded"
-      name="ccis"
-      src="https://tour.panoee.com/iframe/66855ca8ec5013d11d6c2699"
-      frameborder="0"
-      width="100%"
-      height="400px"
-      scrolling="no"
-      allowvr="yes"
-      allow="vr; xr; accelerometer; gyroscope; autoplay;"
-      allowfullscreen="false"
-      webkitallowfullscreen="false"
-      mozallowfullscreen="false"
-      loading="eager"
-    ></iframe>
-
+    <iframe id="tour-embeded" name="ced" src="https://tour.panoee.net/iframe/67d0240abc7e2e95d5ccf21d" frameBorder="0" width="100%" height="550px" scrolling="no" allowvr="yes" allow="vr; xr; accelerometer; gyroscope; autoplay;" allowFullScreen="false" webkitallowfullscreen="false" mozallowfullscreen="false" loading="eager"></iframe>
     <script>
-      var pano_iframe_name = "panoee-tour-embeded";
-      window.addEventListener("devicemotion", function (e) {
-        var iframe = document.getElementById(pano_iframe_name);
-        if (iframe)
-          iframe.contentWindow.postMessage(
-            {
-              type: "devicemotion",
-              deviceMotionEvent: {
-                acceleration: {
-                  x: e.acceleration.x,
-                  y: e.acceleration.y,
-                  z: e.acceleration.z,
-                },
-                accelerationIncludingGravity: {
-                  x: e.accelerationIncludingGravity.x,
-                  y: e.accelerationIncludingGravity.y,
-                  z: e.accelerationIncludingGravity.z,
-                },
-                rotationRate: {
-                  alpha: e.rotationRate.alpha,
-                  beta: e.rotationRate.beta,
-                  gamma: e.rotationRate.gamma,
-                },
-                interval: e.interval,
-                timeStamp: e.timeStamp,
-              },
-            },
-            "*"
-          );
-      });
+      var pano_iframe_name = "tour-embeded";
+      window.addEventListener("devicemotion", function(e){ var iframe = document.getElementById(pano_iframe_name); if (iframe) iframe.contentWindow.postMessage({ type:"devicemotion", deviceMotionEvent:{ acceleration:{ x:e.acceleration.x, y:e.acceleration.y, z:e.acceleration.z }, accelerationIncludingGravity:{ x:e.accelerationIncludingGravity.x, y:e.accelerationIncludingGravity.y, z:e.accelerationIncludingGravity.z }, rotationRate:{ alpha:e.rotationRate.alpha, beta:e.rotationRate.beta, gamma:e.rotationRate.gamma }, interval:e.interval, timeStamp:e.timeStamp } }, "*"); });
     </script>
+    
     <div class="container-fluid mb-5">
       <div class="row">
         <div class="col-lg-12">
