@@ -107,7 +107,7 @@ async function initMap() {
     {
       position: { lat: 8.957376450320611, lng: 125.59566892198143 },
       info: "Boffo Food Hub Canteen",
-      image: "img/download.jpeg",
+      image: "img/bofo.jpg",
       link: "bofo.html",
       icon: "img/canteen.png", // Specific icon for this location
       description: "Open Monday to Friday",
@@ -585,7 +585,7 @@ function searchLocation() {
         lat: 8.957376450320611,
         lng: 125.59566892198143,
         info: "Boffo Food Hub Canteen",
-        image: "img/canteen.jpg",
+        image: "img/bofo.jpg",
         link: "bofo.html",
       },
       osas: {
@@ -972,7 +972,7 @@ async function getDirections() {
       lat: 8.957376450320611,
       lng: 125.59566892198143,
       info: "Boffo Food Hub Canteen",
-      image: "img/canteen.jpg",
+      image: "img/bofo.jpg",
       link: "bofo.html",
     },
     osas: {
