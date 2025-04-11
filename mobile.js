@@ -712,6 +712,15 @@ function searchLocation() {
         link: "hostel.html",
         description: "Located at the Hostel Building",
       },
+       "carabao center":{
+       lat: 8.949836599646707,
+       lng: 125.59798456212924,
+        info: "Carabao Center",
+        image: "img/csu.jpg",
+        icon: "img/carabao.png", // Specific icon for this location
+        link: "carabao.html",
+        description: "Click image to view contents",
+      },
     };
 
     const matchedLocations = Object.keys(searchLocations).filter((key) =>
@@ -1080,6 +1089,15 @@ async function getDirections() {
       image: "",
       link: "coo-canteen.html",
     },
+    "carabao center":{
+      lat: 8.949836599646707,
+      lng: 125.59798456212924,
+       info: "Carabao Center",
+       image: "img/csu.jpg",
+       icon: "img/carabao.png", // Specific icon for this location
+       link: "carabao.html",
+       description: "Click image to view contents",
+     },
   };
 
   try {
@@ -1308,6 +1326,7 @@ const predefinedLocations = [
   { name: "Registrar" },
   { name: "OAS" },
   { name: "CSU Villares Building" },
+  { name: "Carabao Center" },
 ];
 
 // Function to apply autocomplete functionality to an input field
